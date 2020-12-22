@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="en" target-language="fr" datatype="plaintext" original="file.ext">
+    <header>
+      <tool tool-id="symfony" tool-name="Symfony"/>
+    </header>
+    <body>
+      <trans-unit id="OnhpU4i" resname="Home">
+        <source>Home</source>
+        <target>Accueil</target>
+      </trans-unit>
+      <trans-unit id="CAHiOum" resname="My-Symfony-Blog">
+        <source>My-Symfony-Blog</source>
+        <target>Mon-Blog-Symfony</target>
+      </trans-unit>
+      <trans-unit id="20I56Dh" resname="Home-Symfony-Blog">
+        <source>Home-Symfony-Blog</source>
+        <target>Accueil-Blog-Symfony</target>
+      </trans-unit>
+      <trans-unit id="aOYF13j" resname="Welcome in Symfony-Blog">
+        <source>Welcome in Symfony-Blog</source>
+        <target>Bienvenue sur le Blog Symfony</target>
+      </trans-unit>
+      <trans-unit id="iOWRUde" resname="Published on :">
+        <source>Published on :</source>
+        <target>Publié le :</target>
+      </trans-unit>
+      <trans-unit id="ElRmuCH" resname="By">
+        <source>By</source>
+        <target>Par :</target>
+      </trans-unit>
+      <trans-unit id="C.p..or" resname="Learn more...">
+        <source>Learn more...</source>
+        <target>En savoir +</target>
+      </trans-unit>
+      <trans-unit id="qmEiIS5" resname="By :">
+        <source>By :</source>
+        <target>Par :</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

@@ -1,0 +1,28 @@
+{% extends "base.html.twig" %}
+
+{% block title %}{% trans %}Home-Symfony-Blog{% endtrans%}{% endblock %}
+
+{% block body %}
+
+
+<h1 class="m-5 text-center">{% trans %}Welcome in Symfony-Blog{% endtrans%}</h1>
+
+<div class="row">
+    {% for article in articles %}
+
+    <div class="card col-md-4" style="width: 18rem;">
+        <p class=date><em>{% trans %}Published on : {% endtrans%}{{ article.createdAt | date("d/m/Y") }} à {{ article.createdAt | date("h:i") }} {% trans %}By{% endtrans %} <span class="author"> {{  article.author }}</em></p>
+        <!-- Symfony ne peut pas interpréter la date de creation qui est un objet et un element string > nous utilisons donc cette forme de conversion | date("$({m/d/Y}")  -->
+        <img src="/uploads/{{ article.image }}" class="card-img-top" alt="{{ article.title }}">
+        <div class="card-body">
+          <h5 class="card-title"><strong>{{ article.title }}</strong></h5>
+          <a href="{{path('show', {'id':article.id}) }}" class="btn btn-info">{% trans %}Learn more...{% endtrans %}</a>
+          <!-- Chemin > page puis le deuxieme element permettant d'acceder à l'article concerné -->
+        </div>
+      </div>
+
+    {% endfor %}
+</div>
+
+{% endblock %}
+
